@@ -1,0 +1,98 @@
+!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>너랑나 - 감정 상담 신청</title>
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      background-color: #fdfaff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #c9b6e4;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+    }
+    h2 {
+      color: #7a4cd0;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #7a4cd0;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      margin-top: 2rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .note {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>너랑나 무료 감정 상담</h1>
+  </header>
+
+  <div class="container">
+    <h2>익명으로 3분 무료 감정상담을 체험해보세요</h2>
+    <p>섹슈얼 감정, 연애 고민, 외로움, 자존감 등 어떤 주제도 괜찮아요. 신청하신 분께는 심리 전문가가 직접 상담을 드려요.</p>
+
+    <form action="https://formsubmit.co/oyr8722@naver.com" method="POST">
+      <!-- 이메일 알림 설정용 (formsubmit.co 사용 시) -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+
+      <label for="name">이름 (닉네임 가능)</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="phone">전화번호</label>
+      <input type="text" name="phone" id="phone" required>
+
+      <label for="email">이메일</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">상담 내용 (자유롭게 작성)</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">무료 상담 신청하기</button>
+    </form>
+
+    <p class="note">* 입력된 정보는 상담 이외의 용도로 절대 사용되지 않습니다.</p>
+  </div>
+</body>
+</html>
